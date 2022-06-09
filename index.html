@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+  <link rel="stylesheet" href="public/css/index.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦅</text></svg>">
+
+  <title>POSE BIRD 🦅</title>
+</head>
+
+<body>
+  <div id="pose-debug">
+    <video id="video" playsinline style="display: none;"></video>
+    <canvas id="debug-canvas"></canvas>
+  </div>
+  <div id="stats-overlay"></div>
+  <div id="menu-overlay">
+    <div class="menu-spacer"></div>
+    <div class="menu-inner">
+      POSE BIRD 🦅
+    </div>
+    <div class="menu-inner menu-button" id="play-button">PLAY</div>
+    <div id="previous-score"></div>
+    <div id="instructions">Control a bird with your body. Lean to steer. Flap your arms to go up. Don't crash into the ground or trees! Requires a webcam...</div>
+  </div>
+  <div id="info">
+    <div id="version">x.x.x</div>
+    <div><a href="https://natfaulk.com">natfaulk.com</a></div>
+    <div><a href="https://github.com/natfaulk/posebird">View source on Github</a></div>
+  </div>
+  <div id="loading" class="flex-centre">
+    <div>LOADING...</div>
+  </div>
+  <div id="use-chrome">
+    For better performance use Google Chrome (or a browser that supports offscreen canvas)
+  </div>
+  <div id="intro-overlay" class="flex-centre">
+    <div id="intro-overlay-child">Get Ready</div>
+  </div>
+  <script type="text/javascript" src="public/main.js"></script>
+</body>
+</html>
